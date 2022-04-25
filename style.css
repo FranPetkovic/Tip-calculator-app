@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root{
+    --jakaCyan:hsl(172, 67%, 45%);
+    --tamnoCyan:hsl(183, 100%, 15%);
+    --jakoTamnaCyan:hsl(184, 14%, 56%);
+    --sivoCyan:hsl(184, 14%, 56%);
+    --svjSivaCyan:hsl(185, 41%, 84%);
+    --jakoSvjSivaCyan:hsl(189, 41%, 97%);
+    --bijela:hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Space Mono', monospace;
+    background-color: var(--svjSivaCyan);
+    font-size: 24px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    max-width: 1000px;
+    background-color: var(--bijela);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 36px;
+    border-radius: 10px;
+}
+.input-icons img {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 00px;
+}
+  
+.icon {
+    padding: 10px;
+    min-width: 35px;
+    transform: translate(10%,10%);
+}
+  
+.input-field {
+    width: 100%;
+    padding: 5px;
+    text-align: right;
+    background-color: var(--jakoSvjSivaCyan);
+    color: var(--sivoCyan);
+    margin-bottom: 20px;
+}
+.main-div1>p{
+    font-size: 15px;
+    color: var(--sivoCyan);
+    margin-bottom: 5px;
+}
+button,input{
+    border: none;
+}
+.div1-tip{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.div1-tip *{
+    border-radius: 5px;
+}
+.div1-tip input{
+    width: 100%;
+    text-align: right;
+    background-color: var(--jakoSvjSivaCyan);
+    color: var(--sivoCyan);
+    text-align: center;
+}
+.div1-tip button{
+    padding: 10px;
+    font-size: 24px;
+    color: var(--bijela);
+    background-color: var(--tamnoCyan);
+}
+.main-div2{
+    background-color: var(--tamnoCyan);
+    color: var(--bijela);
+    padding: 35px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+.tip-amount>p{
+    font-size: 44px;
+    color: var(--jakaCyan);
+}
+.tip-amount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tip-amount-div2-p{
+    color: var(--sivoCyan);
+}
+.main-div2 button{
+    padding: 10px;
+    font-size: 24px;
+    color: var(--bijela);
+    width: 100%;
+    background-color: var(--jakaCyan);
+    border-radius: 5px;
+}
+.gumb:hover{
+    background-color: var(--jakaCyan);
+    color: var(--tamnoCyan);
+}
+input{
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+}
+@media only screen and (max-device-width: 425px) {
+    main{
+        grid-template-columns: 1fr;
+    }
+}
